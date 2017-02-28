@@ -1,0 +1,30 @@
+header {
+    @include grid-row();
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+
+    h1 {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 80%;
+        border-bottom: 1px solid black;
+    }
+
+    ul {
+        margin: 5px;
+        margin-bottom: 40px;
+        list-style-type: none;
+        padding: 5px;
+        
+        li {
+            @include grid-column(4);
+            display: inline;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }
+}
