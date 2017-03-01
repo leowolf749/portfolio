@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script id="portfolio-template" type="x-mustache-template">
+        <a href=" {{ projectLink }} ">
+            <img src=" {{ projectImage }}"/>
+            <h4>{{ projectName }}</h4>
+            <p id="description">{{ projectDescription }}</p>
+        </a>
+    </script>
     <script src="app.js"></script>
 </head>
 
@@ -45,9 +52,14 @@
         </section>
         <section id="portfolio">
             <h3>portfolio</h3>
+            <div id="projects">
+                <ul id="project-list"></ul>
+            </div>
+            <a href="#home"><img id="upArrow" src="assets/icon-arrow-up-b-128.png"/></a>
         </section>
         <section id="contact">
             <h3>contact</h3>
+            <a href="#home"><img id="upArrow" src="assets/icon-arrow-up-b-128.png"/></a>
         </section>
     </main>
     <footer>

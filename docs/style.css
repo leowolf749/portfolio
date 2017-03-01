@@ -1269,16 +1269,8 @@ body {
     margin-bottom: 10px; }
 
 header {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto;
   margin: 0 auto;
   text-align: center; }
-  header::before, header::after {
-    display: table;
-    content: ' '; }
-  header::after {
-    clear: both; }
   header #header {
     width: 75%;
     border-bottom: 1px solid black;
@@ -1295,10 +1287,18 @@ header {
       margin-right: 50px;
       margin-left: 50px; }
   header ul {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
     margin: 5px;
     margin-bottom: 40px;
     list-style-type: none;
     padding: 5px; }
+    header ul::before, header ul::after {
+      display: table;
+      content: ' '; }
+    header ul::after {
+      clear: both; }
     header ul li {
       width: 33.33333%;
       float: left;

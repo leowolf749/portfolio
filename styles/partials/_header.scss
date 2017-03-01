@@ -1,5 +1,4 @@
 header {
-    @include grid-row();
     margin: 0 auto;
     text-align: center;
 
@@ -26,6 +25,7 @@ header {
     }
 
     ul {
+        @include grid-row();
         margin: 5px;
         margin-bottom: 40px;
         list-style-type: none;
