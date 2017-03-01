@@ -2,14 +2,27 @@ header {
     @include grid-row();
     margin: 0 auto;
     text-align: center;
-    width: 60%;
+    // width: 0%;
 
-    h1 {
-        margin: 0 auto;
-        margin-top: 20px;
-        width: 90%;
+    #header {
+        width: 75%;
         border-bottom: 1px solid black;
-        font-family: $primary-font-type;
+        margin: 0 auto;
+
+        h1 {
+            display: inline-block;
+            margin: 0 auto;
+            margin-top: 20px;
+            font-family: $primary-font-type;
+        }
+
+        img {
+            width: 5%;
+            margin-bottom: 12px;
+            margin-right: 150px;
+            margin-left: 150px;
+        }
+
     }
 
     ul {

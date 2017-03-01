@@ -1262,19 +1262,26 @@ header {
   margin-right: auto;
   margin-left: auto;
   margin: 0 auto;
-  text-align: center;
-  width: 60%; }
+  text-align: center; }
   header::before, header::after {
     display: table;
     content: ' '; }
   header::after {
     clear: both; }
-  header h1 {
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 90%;
+  header #header {
+    width: 75%;
     border-bottom: 1px solid black;
-    font-family: "Droid Serif", serif; }
+    margin: 0 auto; }
+    header #header h1 {
+      display: inline-block;
+      margin: 0 auto;
+      margin-top: 20px;
+      font-family: "Droid Serif", serif; }
+    header #header img {
+      width: 5%;
+      margin-bottom: 12px;
+      margin-right: 150px;
+      margin-left: 150px; }
   header ul {
     margin: 5px;
     margin-bottom: 40px;
@@ -1299,4 +1306,4 @@ header {
 #hero img {
   display: block;
   margin: 0 auto;
-  width: 55%; }
+  width: 65%; }
