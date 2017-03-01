@@ -3,12 +3,16 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-$primary-font-type: 'Khula', sans-serif;
+$primary-font-type: 'Droid Serif', serif;
+$secondary-font-type: 'Raleway', sans-serif;
 
 body {
-    font-family: $primary-font-type;
+    font-family: $secondary-font-type;
+    color: #333333;
+    background-color: #f7f6ed;
 }
 
 
 // Partials
 @import 'partials/header';
+@import 'partials/hero';
