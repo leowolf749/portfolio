@@ -1256,6 +1256,9 @@ body {
   font-family: "Raleway", sans-serif;
   color: #333333;
   background-color: #f7f6ed; }
+  body #upArrow {
+    width: 2%;
+    margin-left: 400px; }
 
 header {
   max-width: 75rem;

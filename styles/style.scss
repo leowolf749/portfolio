@@ -13,6 +13,11 @@ body {
     font-family: $secondary-font-type;
     color: #333333;
     background-color: #f7f6ed;
+
+    #upArrow {
+        width: 2%;
+        margin-left: 400px;
+    }
 }
 
 // Partials
