@@ -1255,10 +1255,17 @@ button {
 body {
   font-family: "Raleway", sans-serif;
   color: #333333;
-  background-color: #f7f6ed; }
+  background-color: #f7f6ed;
+  max-width: 75rem;
+  margin-right: auto;
+  margin-left: auto; }
+  body::before, body::after {
+    display: table;
+    content: ' '; }
+  body::after {
+    clear: both; }
   body #upArrow {
     width: 2%;
-    margin-left: 400px;
     margin-bottom: 10px; }
 
 header {
@@ -1282,10 +1289,11 @@ header {
       margin-top: 20px;
       font-family: "Droid Serif", serif; }
     header #header img {
+      display: inline-block;
       width: 5%;
       margin-bottom: 12px;
-      margin-right: 150px;
-      margin-left: 150px; }
+      margin-right: 50px;
+      margin-left: 50px; }
   header ul {
     margin: 5px;
     margin-bottom: 40px;
