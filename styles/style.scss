@@ -17,6 +17,7 @@ body {
     #upArrow {
         width: 2%;
         margin-left: 400px;
+        margin-bottom: 10px;
     }
 }
 
@@ -24,3 +25,5 @@ body {
 @import 'partials/header';
 @import 'partials/hero';
 @import 'partials/about';
+@import 'partials/portfolio';
+@import 'partials/contact';
