@@ -3,16 +3,19 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
+
 $primary-font-type: 'Droid Serif', serif;
 $secondary-font-type: 'Raleway', sans-serif;
 
+
+// Global
 body {
     font-family: $secondary-font-type;
     color: #333333;
     background-color: #f7f6ed;
 }
 
-
 // Partials
 @import 'partials/header';
 @import 'partials/hero';
+@import 'partials/about';
