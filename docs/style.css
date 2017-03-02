@@ -1330,6 +1330,23 @@ header {
   width: 65%;
   margin: 0 auto;
   border-top: 1px dotted #333333; }
+  #portfolio ul {
+    list-style-type: none;
+    padding: 0px; }
+    #portfolio ul li {
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 40px;
+      text-align: center; }
+      #portfolio ul li h4 {
+        margin-bottom: 10px; }
+      #portfolio ul li a {
+        text-decoration: none;
+        color: #333333; }
+      #portfolio ul li p {
+        font-size: .7em; }
+      #portfolio ul li #tools {
+        font-size: .5em; }
 
 #contact {
   width: 65%;

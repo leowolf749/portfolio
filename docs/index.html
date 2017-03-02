@@ -10,9 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
     <script id="portfolio-template" type="x-mustache-template">
         <a href=" {{ projectLink }} ">
-            <img src=" {{ projectImage }}"/>
             <h4>{{ projectName }}</h4>
+            <img src=" {{ projectImage }}"/>
             <p id="description">{{ projectDescription }}</p>
+            <p id="tools">tools: {{ projectTools }}</p>
         </a>
     </script>
     <script src="app.js"></script>

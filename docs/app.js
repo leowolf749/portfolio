@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
         },
         {
             link: 'https://github.com/leowolf749/shoppers_delight',
-            name: 'Happy Mask Shop Online',
+            name: 'The Happy Mask Shop Online',
             image: 'assets/shoppers-scrnshot.png',
             description: 'A mock website of the Happy Mask Shop from the Zelda video game franchise. Users can browse various masks for sale and add them to their cart. The cart adds up their total.',
             tools: 'JavaScript, Sass, Foundation',
@@ -41,6 +41,7 @@ window.addEventListener('load', function () {
                     projectImage: projects[i].image,
                     projectName: projects[i].name,
                     projectDescription: projects[i].description,
+                    projectTools: projects[i].tools,
                 }
             );
             parent.appendChild(projectSamples);
