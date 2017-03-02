@@ -1352,3 +1352,9 @@ header {
   width: 65%;
   margin: 0 auto;
   border-top: 1px dotted #333333; }
+  #contact #page-links {
+    margin: 0 auto;
+    width: 10%; }
+    #contact #page-links #page-link {
+      margin: 0 auto;
+      width: 45%; }
