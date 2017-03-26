@@ -12,7 +12,7 @@ $secondary-font-type: 'Raleway', sans-serif;
 body {
     font-family: $secondary-font-type;
     color: #333333;
-    background-color: #f7f6ed;
+    background-color: ghostwhite;
     @include grid-row();
 
     #upArrow {
