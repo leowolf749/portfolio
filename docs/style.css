@@ -1254,8 +1254,8 @@ button {
 
 body {
   font-family: "Raleway", sans-serif;
-  color: #333333;
-  background-color: ghostwhite;
+  color: ghostwhite;
+  background-color: #333333;
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto; }
@@ -1265,8 +1265,23 @@ body {
   body::after {
     clear: both; }
   body #upArrow {
-    width: 2%;
-    margin-bottom: 10px; }
+    margin: 3em; }
+    body #upArrow i {
+      width: 100%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      font-size: 2em;
+      color: ghostwhite;
+      text-align: right; }
+      @media print, screen and (min-width: 40em) {
+        body #upArrow i {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+      body #upArrow i:last-child:not(:first-child) {
+        float: right; }
+    body #upArrow i:hover {
+      color: black; }
 
 header {
   margin: 0 auto;
@@ -1312,8 +1327,10 @@ header {
       header ul li:last-child:not(:first-child) {
         float: right; }
       header ul li a {
-        color: black;
+        color: ghostwhite;
         text-decoration: none; }
+      header ul li a:hover {
+        color: black; }
 
 #hero img {
   display: block;
@@ -1323,13 +1340,14 @@ header {
 
 #about {
   width: 65%;
-  margin: 0 auto;
-  border-top: 1px dotted #333333; }
+  margin: 0 auto; }
+  #about p {
+    font-size: .8em; }
 
 #portfolio {
   width: 65%;
   margin: 0 auto;
-  border-top: 1px dotted #333333; }
+  border-top: 1px dotted black; }
   #portfolio ul {
     list-style-type: none;
     padding: 0px; }
@@ -1342,7 +1360,9 @@ header {
         margin-bottom: 10px; }
       #portfolio ul li a {
         text-decoration: none;
-        color: #333333; }
+        color: ghostwhite; }
+      #portfolio ul li img:hover {
+        opacity: 0.5; }
       #portfolio ul li p {
         font-size: .7em; }
       #portfolio ul li #tools {
@@ -1351,15 +1371,18 @@ header {
 #contact {
   width: 65%;
   margin: 0 auto;
-  border-top: 1px dotted #333333; }
+  border-top: 1px dotted black; }
   #contact #page-links {
     margin: 0 auto;
     margin-top: 30px;
     width: 25%;
     padding-left: 25px; }
-    #contact #page-links #page-link {
+    #contact #page-links i {
+      color: ghostwhite;
       margin: 0 auto;
       width: 20%; }
+    #contact #page-links i:hover {
+      color: black; }
 
 footer {
   text-align: center;

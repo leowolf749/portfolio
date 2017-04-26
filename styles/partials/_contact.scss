@@ -1,7 +1,7 @@
 #contact {
     width: 65%;
     margin: 0 auto;
-    border-top: 1px dotted #333333;
+    border-top: 1px dotted black;
 
     #page-links {
         margin: 0 auto;
@@ -9,9 +9,14 @@
         width: 25%;
         padding-left: 25px;
 
-        #page-link {
+        i {
+            color: $font-color;
             margin: 0 auto;
             width: 20%;
+        }
+
+        i:hover {
+            color: black;
         }
     }
 }

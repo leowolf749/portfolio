@@ -36,8 +36,12 @@ header {
             display: inline;
 
             a {
-                color: black;
+                color: $font-color;
                 text-decoration: none;
+            }
+
+            a:hover {
+                color: black;
             }
         }
     }
