@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Leo Wolf: Portfolio</title>
@@ -8,18 +9,6 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
-    <script src="https://use.fontawesome.com/87edec6078.js"></script>
-    <script id="portfolio-template" type="x-mustache-template">
-        <a href=" {{ projectLink }} ">
-            <h4>{{ projectName }}</h4>
-            <img src=" {{ projectImage }}"/>
-            <p id="description">{{ projectDescription }}</p>
-            <p id="tools">tools: {{ projectTools }}</p>
-        </a>
-    </script>
-    <script src="app.js"></script>
 </head>
 
 <body>
@@ -27,7 +16,7 @@
         <div id="header">
             <a href="https://snoom.bandcamp.com/"><img id="left" src="assets/labyrinth.png"/></a>
             <h1>leo wolf</h1>
-            <img id="right" src="assets/labyrinth.png"/>
+            <img id="right" src="assets/labyrinth.png" />
         </div>
         <nav>
             <ul>
@@ -40,20 +29,20 @@
     <main>
         <section>
             <div id="hero">
-                <img src="assets/guangzhou alley.png"/>
+                <img src="assets/guangzhou alley.png" />
             </div>
         </section>
         <section id="about">
             <h2>about</h2>
             <div id="bio">
                 <p>
-                    My name is Leo. Ever since I can remember I've been creating. I've always felt compelled to bring abstract
-                    ideas into fruition. As a Junior Developer specializing in front-end engineering I am able to do just that.
-                    I am a recent graduate from a 12 week immersive program at The Iron Yard in Charlotte, NC, where I learned 
-                    HTML, CSS, JavaScript,frameworks including AngularJS and BackboneJS. I also gained experience using JavaScript
-                    libraries and other various build tools (AJAX, SASS, Foundation, Gulp, Git, Github). When I'm not writing code 
-                    I like to spend my time working on music and art projects, reading, playing sports and video games, or doing 
-                    any outdoor activity. 
+                    My name is Leo. Ever since I can remember I've been creating. I've always felt compelled to bring abstract ideas into fruition.
+                    As a Junior Developer specializing in front-end engineering I am able to do just that. I am a recent
+                    graduate from a 12 week immersive program at The Iron Yard in Charlotte, NC, where I learned HTML, CSS,
+                    JavaScript,frameworks including AngularJS and BackboneJS. I also gained experience using JavaScript libraries
+                    and other various build tools (AJAX, SASS, Foundation, Gulp, Git, Github). When I'm not writing code
+                    I like to spend my time working on music and art projects, reading, playing sports and video games, or
+                    doing any outdoor activity.
                 </p>
                 <a href="#home" id="upArrow"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
             </div>
@@ -69,7 +58,7 @@
             <div id="page-links">
                 <a href="https://github.com/leowolf749"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/leo-wolf-b01b06125/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                <a href="assets/Resume.pdf"><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i></a>
+                <a href="assets/LeoDevResume.pdf"><i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i></a>
                 <a href="mailto:?subject=&body="><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
             </div>
         </section>
@@ -80,5 +69,18 @@
         </div>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script src="https://use.fontawesome.com/87edec6078.js"></script>
+<script id="portfolio-template" type="x-mustache-template">
+    <a href=" {{ projectLink }} ">
+        <h4>{{ projectName }}</h4>
+        <img src=" {{ projectImage }}" />
+        <p id="description">{{ projectDescription }}</p>
+        <p id="tools">tools: {{ projectTools }}</p>
+    </a>
+</script>
+<script src="app.js"></script>
+
 
 </html>
