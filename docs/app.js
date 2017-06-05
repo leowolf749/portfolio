@@ -2,6 +2,13 @@
 window.addEventListener('load', function () {
     let projects = [
         {
+            link: 'http://inspiredclosets.com/',
+            name: 'Inspired Closets',
+            image: 'assets/closets-scrnshot.png',
+            description: 'An interactive website for Inspired Closets, a division of The Stow Company. Clients are able to browse custom closet designs and design elements, read and watch real testimonials from other clients, learn about the process, and subscribe to the Inspired Closets mailing list.',
+            tools: 'Wordpress, PHP, JQuery, Sass, Gulp, Foundation, JIRA, MAMP',
+        },
+        {
             link: 'https://drumcircle1.herokuapp.com/',
             name: 'Drum Circle',
             image: 'assets/drum-circle-scrnshot.png',
