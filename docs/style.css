@@ -1285,69 +1285,95 @@ body {
 
 header {
   margin: 0 auto;
-  text-align: center; }
+  text-align: left; }
+  @media print, screen and (min-width: 40em) {
+    header {
+      text-align: center; } }
   header #header {
-    width: 75%;
-    border-bottom: 1px solid black;
-    margin: 0 auto; }
+    width: 100%; }
+    @media print, screen and (min-width: 40em) {
+      header #header {
+        width: 75%;
+        margin: 0 auto;
+        border-bottom: 1px solid black; } }
     header #header h1 {
       display: inline-block;
-      margin: 0 auto;
       margin-top: 20px;
-      font-family: "Droid Serif", serif; }
-    header #header img {
-      display: inline-block;
-      width: 5%;
-      margin-bottom: 12px;
-      margin-right: 50px;
-      margin-left: 50px; }
-  header ul {
-    max-width: 75rem;
-    margin-right: auto;
-    margin-left: auto;
-    margin: 5px;
-    margin-bottom: 40px;
-    list-style-type: none;
-    padding: 5px; }
-    header ul::before, header ul::after {
-      display: table;
-      content: ' '; }
-    header ul::after {
-      clear: both; }
-    header ul li {
-      width: 33.33333%;
-      float: left;
-      padding-right: 0.625rem;
-      padding-left: 0.625rem;
-      display: inline; }
+      font-family: "Droid Serif", serif;
+      margin-left: 1.2em; }
       @media print, screen and (min-width: 40em) {
+        header #header h1 {
+          margin-left: 0px; } }
+    header #header img {
+      display: none; }
+      @media print, screen and (min-width: 40em) {
+        header #header img {
+          display: inline-block;
+          width: 5%;
+          margin-bottom: 12px;
+          margin-right: 50px;
+          margin-left: 50px; } }
+  header ul {
+    display: none; }
+    @media print, screen and (min-width: 40em) {
+      header ul {
+        display: block;
+        max-width: 75rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin: 5px;
+        margin-bottom: 40px;
+        list-style-type: none;
+        padding: 5px; }
+        header ul::before, header ul::after {
+          display: table;
+          content: ' '; }
+        header ul::after {
+          clear: both; }
         header ul li {
-          padding-right: 0.9375rem;
-          padding-left: 0.9375rem; } }
-      header ul li:last-child:not(:first-child) {
-        float: right; }
-      header ul li a {
-        color: ghostwhite;
-        text-decoration: none; }
-      header ul li a:hover {
-        color: black; }
+          width: 33.33333%;
+          float: left;
+          padding-right: 0.625rem;
+          padding-left: 0.625rem;
+          display: inline; } }
+    @media print, screen and (min-width: 40em) and (min-width: 40em) {
+      header ul li {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+    @media print, screen and (min-width: 40em) {
+          header ul li:last-child:not(:first-child) {
+            float: right; }
+          header ul li a {
+            color: ghostwhite;
+            text-decoration: none; }
+          header ul li a:hover {
+            color: black; } }
 
 #hero img {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
-  width: 65%; }
+  width: 88%; }
+  @media print, screen and (min-width: 40em) {
+    #hero img {
+      width: 65%; } }
 
 #about {
-  width: 65%;
+  width: 88%;
   margin: 0 auto; }
+  @media print, screen and (min-width: 40em) {
+    #about {
+      width: 65%; } }
   #about p {
     font-size: .8em; }
 
 #portfolio {
-  width: 65%;
+  width: 88%;
   margin: 0 auto;
   border-top: 1px dotted black; }
+  @media print, screen and (min-width: 40em) {
+    #portfolio {
+      width: 65%; } }
   #portfolio ul {
     list-style-type: none;
     padding: 0px; }
@@ -1369,14 +1395,20 @@ header {
         font-size: .7em; }
 
 #contact {
-  width: 65%;
+  width: 88%;
   margin: 0 auto;
   border-top: 1px dotted black; }
+  @media print, screen and (min-width: 40em) {
+    #contact {
+      width: 65%; } }
   #contact #page-links {
     margin: 0 auto;
     margin-top: 30px;
-    width: 25%;
+    width: 40%;
     padding-left: 25px; }
+    @media print, screen and (min-width: 40em) {
+      #contact #page-links {
+        width: 25%; } }
     #contact #page-links i {
       color: ghostwhite;
       margin: 0 auto;

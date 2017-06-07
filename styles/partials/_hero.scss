@@ -4,6 +4,9 @@
         display: block;
         margin: 0 auto;
         margin-bottom: 20px;
-        width: 65%;
+        width: 88%;
+        @include breakpoint(medium) {
+            width: 65%;
+        }
     }
 }

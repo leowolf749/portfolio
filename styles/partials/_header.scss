@@ -1,47 +1,63 @@
 header {
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    @include breakpoint(medium) {
+        text-align: center;
+    }
 
     #header {
-        width: 75%;
-        border-bottom: 1px solid black;
-        margin: 0 auto;
+        width: 100%;
+        @include breakpoint(medium) {
+            width: 75%;
+            margin: 0 auto;
+            border-bottom: 1px solid black;
+        }
 
         h1 {
             display: inline-block;
-            margin: 0 auto;
             margin-top: 20px;
             font-family: $primary-font-type;
+            margin-left: 1.2em;
+            @include breakpoint(medium) {
+                margin-left: 0px;
+            }
         }
 
         img {
-            display: inline-block;
-            width: 5%;
-            margin-bottom: 12px;
-            margin-right: 50px;
-            margin-left: 50px;
+            display: none;
+            @include breakpoint(medium) {
+                display: inline-block;
+                width: 5%;
+                margin-bottom: 12px;
+                margin-right: 50px;
+                margin-left: 50px;
+            }
         }
 
     }
 
     ul {
-        @include grid-row();
-        margin: 5px;
-        margin-bottom: 40px;
-        list-style-type: none;
-        padding: 5px;
+        display: none;
+        @include breakpoint(medium) {
+            display: block;
+            @include grid-row();
+            margin: 5px;
+            margin-bottom: 40px;
+            list-style-type: none;
+            padding: 5px;
         
-        li {
-            @include grid-column(4);
-            display: inline;
+            li {
+                @include grid-column(4);
+                display: inline;
 
-            a {
-                color: $font-color;
-                text-decoration: none;
-            }
+                a {
+                    color: $font-color;
+                    text-decoration: none;
+                }
 
-            a:hover {
-                color: black;
+                a:hover {
+                    color: black;
+                }
             }
         }
     }

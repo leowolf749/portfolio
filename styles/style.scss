@@ -3,12 +3,22 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-
+// Font and Colors
 $primary-font-type: 'Droid Serif', serif;
 $secondary-font-type: 'Raleway', sans-serif;
 $font-color: ghostwhite;
 $background-color: #333333;
 
+// Breakpoints
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+$print-breakpoint: large;
+$breakpoint-classes: (small medium large);
 
 // Global
 body {
