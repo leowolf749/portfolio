@@ -1286,12 +1286,12 @@ body {
 header {
   margin: 0 auto;
   text-align: left; }
-  @media print, screen and (min-width: 40em) {
+  @media screen and (min-width: 40em) {
     header {
       text-align: center; } }
   header #header {
     width: 100%; }
-    @media print, screen and (min-width: 40em) {
+    @media screen and (min-width: 40em) {
       header #header {
         width: 75%;
         margin: 0 auto;
@@ -1301,12 +1301,12 @@ header {
       margin-top: 20px;
       font-family: "Droid Serif", serif;
       margin-left: 1.2em; }
-      @media print, screen and (min-width: 40em) {
+      @media screen and (min-width: 40em) {
         header #header h1 {
           margin-left: 0px; } }
     header #header img {
       display: none; }
-      @media print, screen and (min-width: 40em) {
+      @media screen and (min-width: 40em) {
         header #header img {
           display: inline-block;
           width: 5%;
@@ -1315,7 +1315,7 @@ header {
           margin-left: 50px; } }
   header ul {
     display: none; }
-    @media print, screen and (min-width: 40em) {
+    @media screen and (min-width: 40em) {
       header ul {
         display: block;
         max-width: 75rem;
@@ -1336,11 +1336,11 @@ header {
           padding-right: 0.625rem;
           padding-left: 0.625rem;
           display: inline; } }
-    @media print, screen and (min-width: 40em) and (min-width: 40em) {
+    @media screen and (min-width: 40em) and (min-width: 40em) {
       header ul li {
         padding-right: 0.9375rem;
         padding-left: 0.9375rem; } }
-    @media print, screen and (min-width: 40em) {
+    @media screen and (min-width: 40em) {
           header ul li:last-child:not(:first-child) {
             float: right; }
           header ul li a {
