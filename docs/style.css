@@ -1269,7 +1269,7 @@ textarea {
         margin-bottom: 0; } }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "SimSun", sans-serif;
   color: ghostwhite;
   background-color: #333333;
   max-width: 75rem;
@@ -1317,7 +1317,7 @@ header {
     header #header h1 {
       display: inline-block;
       margin-top: 20px;
-      font-family: "Droid Serif", serif;
+      font-family: "SimSun", sans-serif;
       margin-left: 1.2em; }
       @media screen and (min-width: 40em) {
         header #header h1 {
@@ -1410,7 +1410,7 @@ header {
       #portfolio ul li img:hover {
         opacity: 0.5; }
       #portfolio ul li p {
-        font-size: .8em; }
+        font-size: 1em; }
       #portfolio ul li #tools {
         font-size: .7em; }
 
@@ -1438,6 +1438,6 @@ header {
 
 footer {
   text-align: center;
-  font-size: .8em;
+  font-size: 1em;
   margin-top: 40px;
   margin-bottom: 20px; }
