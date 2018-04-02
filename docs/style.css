@@ -1,6 +1,6 @@
 /**
  * Foundation for Sites by ZURB
- * Version 6.3.0
+ * Version 6.4.3
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
@@ -457,6 +457,7 @@ textarea {
   border-radius: 0; }
 
 select {
+  box-sizing: border-box;
   width: 100%;
   border-radius: 0; }
 
@@ -474,9 +475,20 @@ button {
   border: 0;
   border-radius: 0;
   background: transparent;
-  line-height: 1; }
+  line-height: 1;
+  cursor: auto; }
   [data-whatinput='mouse'] button {
     outline: 0; }
+
+pre {
+  overflow: auto; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; }
 
 .is-visible {
   display: block !important; }
@@ -490,7 +502,9 @@ button {
   margin-left: auto; }
   .row::before, .row::after {
     display: table;
-    content: ' '; }
+    content: ' ';
+    flex-basis: 0;
+    order: 1; }
   .row::after {
     clear: both; }
   .row.collapse > .column, .row.collapse > .columns {
@@ -515,6 +529,8 @@ button {
     .row.expanded .row {
       margin-right: auto;
       margin-left: auto; }
+  .row:not(.expanded) .row {
+    max-width: none; }
   .row.gutter-small > .column, .row.gutter-small > .columns {
     padding-right: 0.625rem;
     padding-left: 0.625rem; }
@@ -1261,7 +1277,9 @@ body {
   margin-left: auto; }
   body::before, body::after {
     display: table;
-    content: ' '; }
+    content: ' ';
+    flex-basis: 0;
+    order: 1; }
   body::after {
     clear: both; }
   body #upArrow {
@@ -1327,7 +1345,9 @@ header {
         padding: 5px; }
         header ul::before, header ul::after {
           display: table;
-          content: ' '; }
+          content: ' ';
+          flex-basis: 0;
+          order: 1; }
         header ul::after {
           clear: both; }
         header ul li {
