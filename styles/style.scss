@@ -3,44 +3,48 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-// Font and Colors
-$primary-font-type: 'SimSun', sans-serif;
-$secondary-font-type: 'SimSun', sans-serif;
-$font-color: ghostwhite;
-$background-color: #333333;
+$primary-font-type: 'Josefin Sans', sans-serif;
+$secondary-font-type: 'Lato', sans-serif; 
+$medium: 750px;
+$large: 900px;
 
-// Breakpoints
-$medium: 640px;
-$large: 1024px;
-
-
-// Global
-body {
-    font-family: $secondary-font-type;
-    color: $font-color;
-    background-color: $background-color;
-    @include grid-row();
-
-    #upArrow {
-        margin: 3em;
-
-        i {
-            @include grid-column(12);
-            font-size: 2em;
-            color: $font-color;
-            text-align: right;
-        }
-
-        i:hover {
-            color: black;
-        }
-    }
+// Global styles ---------------------------------
+html {
+    height: 100%;
 }
 
-// Partials
+body {
+    height: 100%;
+    max-width: 100%;
+    padding-bottom: 30px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        color: lightgrey;
+    }
+
+    .sub {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h4 {
+        margin: 0px;
+        padding: 3px;
+        font-family: $primary-font-type;
+        color: lightgrey;
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+    }
+
+}
+
+// Partials --------------------------------------
 @import 'partials/header';
-@import 'partials/hero';
-@import 'partials/about';
-@import 'partials/portfolio';
-@import 'partials/contact';
+@import 'partials/home';
+@import 'partials/artists';
 @import 'partials/footer';

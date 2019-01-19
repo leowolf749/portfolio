@@ -1,63 +1,69 @@
-header {
-    margin: 0 auto;
-    text-align: left;
-    @include breakpoint($medium) {
-        text-align: center;
-    }
+nav {
+    @include grid-row();
 
-    #header {
-        width: 100%;
+    #logo {
+        @include grid-column(12);
+        margin-top: 3em;
         @include breakpoint($medium) {
-            width: 75%;
-            margin: 0 auto;
-            border-bottom: 1px solid black;
-        }
-
-        h1 {
-            display: inline-block;
-            margin-top: 20px;
-            font-family: $primary-font-type;
-            margin-left: 1.2em;
-            @include breakpoint($medium) {
-                margin-left: 0px;
-            }
+            margin-top: 1em;
         }
 
         img {
-            display: none;
+            display: block;
+            margin: 0 auto;
+            width: 40%;
             @include breakpoint($medium) {
-                display: inline-block;
-                width: 5%;
-                margin-bottom: 12px;
-                margin-right: 50px;
-                margin-left: 50px;
+                width: 12%;
             }
         }
-
     }
 
-    ul {
-        display: none;
+    #title-container {
+        @include grid-column(12);
+        margin-top: 2em;
+        font-size: 2em;
         @include breakpoint($medium) {
-            display: block;
-            @include grid-row();
-            margin: 5px;
-            margin-bottom: 40px;
-            list-style-type: none;
-            padding: 5px;
+            margin-top: 0em;
+            font-size: .8em;
+            // border-bottom: 1px solid lightgrey;
+        }
+        font-family: $primary-font-type;
+        padding-top: 5px;
+        text-align: center;
+
+        #title-link {
+            color: lightgrey;
+        }
+    }
+
+    #nav-links {
+        @include grid-column(12);
+        margin-top: 1.75em;
+        font-size: 3em;
+        @include breakpoint($medium) {
+            margin-top: 0px;
+            font-size: 1em;
+            height: 2em;
+        }
+        font-family: $secondary-font-type;
         
+        ul {
+            margin-top: 25px;
+            @include breakpoint($medium) {
+                margin-top: 0px;
+            }
+            padding: 0px;
+            text-align: center;
+
             li {
-                @include grid-column(4);
-                display: inline;
-
-                a {
-                    color: $font-color;
-                    text-decoration: none;
+                list-style-type: none;
+                display: block;
+                @include breakpoint($medium) {
+                    display: inline-block;
                 }
-
-                a:hover {
-                    color: black;
-                }
+                margin: 0 auto;
+                margin-right: 20px;
+                margin-bottom: .75em;
             }
         }
     }
